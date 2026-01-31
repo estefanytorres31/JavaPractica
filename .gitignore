@@ -30,3 +30,41 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/ 
+
+### Logs ###
+logs/*.log
+logs/*.log.*
+logs/*.log.gz  
+
+### Temporary Files ###
+tmp/*.tmp
+temp/*.tmp
+*.swp
+*.swo
+*~.lock
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.class
+*.log
+
+### Build Directories ###
+build/
+target/
+out/
+dist/
+bin/
+release/
+debug/
+
+.gradle/
+.gradle-cache/
+.github/
