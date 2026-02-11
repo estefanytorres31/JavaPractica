@@ -1,3 +1,5 @@
+package seccion2;
+
 public class ConstanteJava {
     public static void main(String[] args) {
         //Definición de una constante en Java

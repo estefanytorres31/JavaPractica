@@ -1,3 +1,5 @@
+package seccion2;
+
 public class DetallePersona {
     public static void main(String[] args) {
         //Detalle de una persona

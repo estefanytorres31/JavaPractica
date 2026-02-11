@@ -1,3 +1,5 @@
+package seccion2;
+
 public class ReglasVariables {
     public static void main(String[] args) {
         // Reglas para nombrar variables en Java

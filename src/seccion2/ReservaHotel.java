@@ -1,3 +1,5 @@
+package seccion2;
+
 public class ReservaHotel {
     public static void main(String[] args) {
         var nombreCliente = "Estefany Torres";

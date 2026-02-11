@@ -1,3 +1,5 @@
+package seccion2;
+
 public class ConcatenacionCadenas {
     public static void main(String[] args) {
         System.out.println("Concatenación de Cadenas en Java");

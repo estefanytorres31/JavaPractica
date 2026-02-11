@@ -1,3 +1,5 @@
+package seccion2;
+
 public class DetalleProducto {
     public static void main(String[] args) {
         //Detalle de un producto

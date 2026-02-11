@@ -1,3 +1,5 @@
+package seccion2;
+
 public class DetalleLibro {
     public static void main (String args[]){
         //Detalle de un libro
