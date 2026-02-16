@@ -15,7 +15,7 @@ public class OperadorLogico {
         var resultado=a && b;
         System.out.println("Resultado AND: " + resultado);
 
-        //OR (||)
+        //OR (||) pipe
         // x | y | x || y
         // 0 | 0 | 0
         // 0 | 1 | 1
