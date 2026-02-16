@@ -43,5 +43,52 @@ public class MasCadenas {
         var cadenaStrip = cadenaConEspacios.strip();
         System.out.println("Cadena con espacios: '" + cadenaConEspacios + "'");
         System.out.println("Cadena sin espacios con strip(): '" + cadenaStrip + "'");
+
+        //Metodo isBlank() (Desde Java 11) para verificar si una cadena está vacía o contiene solo espacios en blanco
+        var cadenaVacia = "   ";
+        System.out.println("¿La cadena está vacía o contiene solo espacios? " + cadenaVacia.isBlank());
+
+        //Metodo lines() (Desde Java 11) para dividir una cadena en líneas
+        var cadenaMultilinea = "Línea 1\nLínea 2\nLínea 3";
+        var lineas = cadenaMultilinea.lines().toArray();
+        System.out.println("Líneas de la cadena:");
+        for (var linea : lineas) {
+            System.out.println(linea);
+        }
+
+        //Metodo indent() (Desde Java 12) para agregar sangría a cada línea de una cadena
+        var cadenaIndentada = cadenaMultilinea.indent(4);
+        System.out.println("Cadena con indentación:");
+        System.out.println(cadenaIndentada);
+
+        //Metodo transform() (Desde Java 12) para transformar una cadena utilizando una función lambda
+        var cadenaTransformada = cadena1.transform(c -> c.toUpperCase());
+        System.out.println("Cadena transformada con transform(): " + cadenaTransformada);
+
+        //Metodo describeConstable() (Desde Java 12) para obtener una descripción de la cadena como un Optional
+        var descripcion = cadena1.describeConstable();
+        System.out.println("Descripción de la cadena con describeConstable(): " + descripcion.orElse("No se pudo describir la cadena"));
+
+        //Metodo indent() con números negativos para eliminar sangría
+        var cadenaDesindentada = cadenaIndentada.indent(-4);
+        System.out.println("Cadena con desindentación:");
+        System.out.println(cadenaDesindentada);
+
+        //Metodo de separar caracteres con split() para dividir una cadena en partes utilizando un delimitador
+        var cadenaSplit = "Java,Python,C++,JavaScript";
+        var lenguajes = cadenaSplit.split(",");
+        System.out.println("Lenguajes de programación:");
+        for (var lenguaje : lenguajes) {
+            System.out.println(lenguaje);
+        }
+
+        //Metodo de comparar cadenas con equals() para verificar si dos cadenas son iguales
+        var cadenaA = "Hola";
+        var cadenaB = "Hola";
+        var cadenaC = new String("Hola");
+        System.out.println("¿CadenaA es igual a CadenaB? " + cadenaA.equals(cadenaB)); // true
+        System.out.println("¿CadenaA es igual a CadenaC? " + cadenaA.equals(cadenaC)); // true, aunque son objetos diferentes, el contenido es igual
+
+
     }
 }
