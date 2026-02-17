@@ -15,8 +15,5 @@ public class DentroRango {
         var estaDentroRango = dato >= MINIMO && dato <= MAXIMO;
         //Mostrar el resultado
         System.out.println("¿El número " + dato + " está dentro del rango de " + MINIMO + " a " + MAXIMO + "? " + estaDentroRango);
-
-
-
     }
 }
