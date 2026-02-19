@@ -23,7 +23,10 @@ public class SistemaReservaHotel {
         System.out.print("¿Desea una habitación con vista al mar? (true/false): ");
         var deseaVistaMar = Boolean.parseBoolean(consola.nextLine());
 
+        //Calculamos el costo total de la reserva
         var costoPagar = deseaVistaMar ? diasEstadia*COSTO_CON_VISTA_MAR_DIARIO : diasEstadia*COSTO_SIN_VISTA_MAR_DIARIO;
+
+        //Convertimos la respuesta de vista al mar a un formato más amigable para mostrar al usuario
         var tieneVistaMar = deseaVistaMar ? "Sí :)" : "No :(";
 
         System.out.printf("""
