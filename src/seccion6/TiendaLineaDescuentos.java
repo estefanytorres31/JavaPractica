@@ -63,5 +63,35 @@ public class TiendaLineaDescuentos {
                     Total a pagar: S/. %.2f
                     """, montoCompra);
         }
+
+//        //Otra forma de hacerlo con una sola variable para el descuento aplicado
+//        var descuentoAplicado = 0.0;
+//        if (montoCompra >= MONTO_MINIMO_COMPRA && esMiembro) {
+//            descuentoAplicado = DESCUENTO_MEMBRESIA_MONTO;
+//        } else if (esMiembro) {
+//            descuentoAplicado = DESCUENTO_MEMBRESIA;
+//        } else if (montoCompra >= MONTO_MINIMO_COMPRA) {
+//            descuentoAplicado = DESCUENTO_MONTO;
+//        } else {
+//            descuentoAplicado = 0.0;
+//        }
+//
+//        if (descuentoAplicado > 0) {
+//            var descuento = montoCompra * descuentoAplicado;
+//            var totalPagar = montoCompra - descuento;
+//            System.out.printf("""
+//                    Felicidades! Has obtenido un descuento del %.0f%%
+//                    Monto de la compra: S/. %.2f
+//                    Descuento aplicado: S/. %.2f
+//                    Total a pagar: S/. %.2f
+//                    """, descuentoAplicado * 100, montoCompra, descuento, totalPagar);
+//        } else {
+//            System.out.printf("""
+//                    No obtuviste ni un descuento!
+//                    Te invitamos a hacerte miembro de la tienda
+//                    Total a pagar: S/. %.2f
+//                    """, montoCompra);
+//        }
+
     }
 }
